@@ -108,3 +108,8 @@ input[type=submit] {
   margin-top: 8px;
   font-size: 20px;
 }
+
+.add-banner1{
+  width: 320px;
+  margin: 0 auto;
+}
