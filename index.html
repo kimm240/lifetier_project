@@ -146,10 +146,11 @@
         var TierArrayName = ["Challenger", "Grandmaster", "Master", "Diamond1", "Diamond2", "Diamond3", "Diamond4", "Platinum1", "Platinum2", "Platinum3", "Platinum4", "Gold1", "Gold2", "Gold3", "Gold4", "Silver1", "Silver2", "Silver3", "Silver4", "Bronze1", "Bronze2", "Bronze3", "Bronze4", "Iron1", "Iron2", "Iron3", "Iron4"]
         var ActivatedCount = 0;
         var what; var whatflag = 0;
+        var EmptyArray = [];
 
         function DynamicAutocomplete() {
             var xx = document.getElementById("mySelect").selectedIndex;
-            if (document.getElementsByTagName("option")[xx].value == 1) { }
+            if (document.getElementsByTagName("option")[xx].value == 1) autocomplete(document.getElementById("data"), EmptyArray);
             else if (document.getElementsByTagName("option")[xx].value == 2) autocomplete(document.getElementById("data"), ResidentArray);
             else if (document.getElementsByTagName("option")[xx].value == 3) autocomplete(document.getElementById("data"), university1Array);
             else if (document.getElementsByTagName("option")[xx].value == 4) autocomplete(document.getElementById("data"), university2Array);
