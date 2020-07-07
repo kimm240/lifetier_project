@@ -114,7 +114,8 @@ input[type=submit] {
 
 .add-banner1{
   width: 320px;
-  margin: 70 auto;
+  margin-top: 70px;
+  margin: 0 auto;
 }
 
 .add-banner2{
