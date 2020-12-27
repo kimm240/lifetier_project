@@ -341,16 +341,16 @@
         }
 
         function print_output(ratio, tier) {
-            var intro_str = "당신의 인생 데이터  " + what + " :";;
+            //var intro_str = "당신의 인생 데이터  " + what + " :";;
 
-            /*
-            if(what.eqauls("아파트/빌라")){
+            
+            if(what == "아파트/빌라"){
                 intro_str = "당신의 인생 데이터  " + what + " :" + apartmentPriceArray[aptRank] + "(만)원으로,";
             }
             else{
                 intro_str = "당신의 인생 데이터  " + what + " :";
             }
-            */
+            
             document.getElementById("intro").innerHTML = intro_str;
 
             var ratio_str = "대한민국에서 상위" + ratio + "%입니다."
