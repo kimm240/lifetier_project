@@ -240,7 +240,6 @@
                 while (university1ScoreArray[tempr] == university1ScoreArray[r]) {
                     r--;
                 }
-                if (r == 0) r = 1;
 
                 //영어 포함 성적으로 산출하지 않은 대학 13개 포함
                 var ratio = (r / (university1Array.length + 13)) * 100;
@@ -343,7 +342,7 @@
 
         function print_output(ratio, tier) {
             var intro_str;
-            if(what == "아파트/빌라"){
+            if(what.eqauls("아파트/빌라")){
                 var intro_str = "당신의 인생 데이터  " + what + " :" + apartmentPriceArray[aptRank] + "(만)원으로,";
             }
             else{
